@@ -1,3 +1,4 @@
+import 'package:chatapp/screens/sample.dart';
 import 'package:chatapp/screens/signin.dart';
 import 'package:chatapp/services/service_locator.dart';
 import 'package:chatapp/services/user_provider.dart';
@@ -27,7 +28,7 @@ class ChatApp extends StatelessWidget {
       ],
       child: MaterialApp(
         title: 'ChatApp',
-        home: SignIn(),
+        home: SignIn(),//Sample(),
         theme: ThemeData(
           primaryColor: Color(0xFF2B465A),
         ),

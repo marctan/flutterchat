@@ -9,12 +9,16 @@ class Database {
   }
 
   //todo after signup call this
-  Future<void> addUserToDb() async {
+  Future<void> addUserToDb(username, email) async {
     final userMap = {
-      'email': 'marcqtan@gmail.com', //email
-      'name': 'marc2', //username
+      'email': email, //email
+      'name': username, //username
     };
-    await FirebaseFirestore.instance.collection('users').add(userMap);
+    try {
+      await FirebaseFirestore.instance.collection('users').add(userMap);
+    } catch (error) {
+      throw (error);
+    }
   }
 
   Future<QuerySnapshot> getNameByEmail(email) async {
