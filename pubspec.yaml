@@ -36,6 +36,8 @@ dependencies:
   firebase_auth: ^0.18.0+1
   shared_preferences: ^0.5.10
   email_validator: ^1.0.4
+  firebase_analytics: ^6.0.0
+  firebase_admob: ^0.10.0-dev.1
 
 dev_dependencies:
   flutter_test:
